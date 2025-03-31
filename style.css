@@ -1,0 +1,38 @@
+/* use flexbox on them start again from scratch after taking a break */
+
+body {
+  background: #61b390;
+}
+img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background: #bad8b6;
+}
+
+.card:hover {
+  background: #a8d6a1;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
