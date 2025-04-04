@@ -1,4 +1,5 @@
-/* use flexbox on them start again from scratch after taking a break */
+/* next add a p tag for description in each card and make sure 
+it has the same spacing and is responsive no matter how much text is typed*/
 
 body {
   background: #61b390;
@@ -9,11 +10,52 @@ img {
   height: auto;
 }
 
+header {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #bad8b6;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.nav-container a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: auto;
+  height: 2.5rem; /* Using relative units instead of pixels */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.header-logo {
+  flex: 1; /* Take up 1 part */
+}
+
+.header-title {
+  flex: 1; /* Take up 1 part */
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: olive;
+  font-weight: 1rem;
+}
+
+.nav-container {
+  flex: 1; /* Take up 1 part */
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
 .main-container {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   padding: 20px;
 }
@@ -23,11 +65,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-
   background: #bad8b6;
 }
 
