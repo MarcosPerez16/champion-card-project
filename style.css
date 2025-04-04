@@ -1,8 +1,12 @@
-/* next add a p tag for description in each card and make sure 
-it has the same spacing and is responsive no matter how much text is typed*/
+main {
+  flex: 1; /* Take up remaining space */
+}
 
 body {
   background: #61b390;
+  min-height: 100vh; /* Make body at least full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
 }
 img {
   width: 100%;
@@ -12,11 +16,44 @@ img {
 
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 16px;
   padding: 16px;
   background: #bad8b6;
   border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: #bad8b6;
+  border-radius: 5px;
+}
+
+.copyright-container {
+  flex: 1; /* Take up 1 part */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-media-container {
+  flex: 1; /* Take up 1 part */
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 8px;
+}
+
+.disclaimer-container {
+  flex: 1; /* Take up 1 part */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .nav-container a {
